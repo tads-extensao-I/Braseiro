@@ -1,0 +1,196 @@
+
+
+
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-Light),
+    url(/path/to/Montserrat-Light.woff2) format("woff2"),
+    url(/path/to/Montserrat-Light.woff) format("woff"),
+    url(/path/to/Montserrat-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-Regular),
+    url(/path/to/Montserrat-Regular.woff2) format("woff2"),
+    url(/path/to/Montserrat-Regular.woff) format("woff"),
+    url(/path/to/Montserrat-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-Bold),
+    url(/path/to/Montserrat-Bold.woff2) format("woff2"),
+    url(/path/to/Montserrat-Bold.woff) format("woff"),
+    url(/path/to/Montserrat-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: local(Poppins-Light),
+    url(/path/to/Poppins-Light.woff2) format("woff2"),
+    url(/path/to/Poppins-Light.woff) format("woff"),
+    url(/path/to/Poppins-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.h1{
+  font-family: poppins;
+  font-size: 5.6rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.h2{
+  font-family: poppins;
+  font-size: 4.8rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.h3{
+  font-family: poppins;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.text-20px-Bold {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-20px-normal {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-20px-light {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-16px-Bold {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-16px-normal {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-16px-light {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-12px-Bold {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-12px-normal {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-12px-light {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-8px-Bold {
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-8px-normal {
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.text-8px-light {
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}

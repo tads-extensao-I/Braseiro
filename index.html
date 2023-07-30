@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRASEIRO</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="import" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Inicio Código Nicholas -->
+    <section class="section__img-background">
+    <header class="">
+        <div class="container-logo">
+            <img class="logo-imagem" src="img/LOGO BRASEIRO.png">
+        </div>
+        <div class="menu-cabecalho">
+            <ul class="text-16px-Bold">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Produtos">Produtos</a></li>
+                <li><a href="#Receitas">Receitas</a></li>
+                <li><a href="#Somos">Quem somos</a></li>
+                <li><a href="#Contatos">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="slides">
+          <img src="./img/FundoAnimado.jpg" alt="Slide 1">
+          <img src="./img/FundoAnimado2.jpg" alt="Slide 2">
+          <img src="./img/FundoAnimado3.jpg" alt="Slide 3">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <div class="indicator"></div>
+      </div>
+    </section>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Voltar ao inicio"><i class="ph ph-arrow-circle-up"></i></button>
+    <!-- Fim Código Nicholas -->
+
+    <!-- Inicio Código Tiago-->
+    <!-- começo dos produtos -->
+    <section class="produtos">
+        <div class="link-produto">
+            <a class="a & text-20px-Bold" href="#">PRODUTOS</a>
+        </div>
+        <div class="card-produtos">
+            <article class="card">
+                <a href="#">
+                    <img src="img/Produtos/PRODUTO 2°.png">
+                </a>
+            </article>
+            <a href="#">
+                <article class="card_produto1">
+                    <img src="img/Produtos/PRODUTO 1°.png">
+            </a>
+            </article>
+            <a href="#">
+                <article class="card">
+                    <img src="img/Produtos/PRODUTO 3°.png">
+            </a>
+            </article>
+        </div>
+        <div class="espaco">
+            <div class="link-maisproduto">
+                <a class="alt & text-16px-Bold" href="#Produtos">MAIS PRODUTOS</a>
+            </div>
+        </div>
+    </section>
+    <!-- Final dos produtos -->
+    <!-- Receitas-->
+    <section id="Receitas" class="receitas_todos">
+        <div class="link_receitas">
+            <div class="tipos_de_receitas">
+                <a class="tipo & text-16px-Bold" href="#">
+                    TIPOS DE RECEITAS
+                </a>
+            </div>
+        </div>
+        <div class="receitas_card">
+            <article class="card_receita1">
+                <img src="img/Receitas/Receita1.png">
+            </article>
+            <article class="card_receita1">
+                <img src="img/Receitas/Receita2.png">
+            </article>
+            <article class="card_receita1">
+                <img src="img/Receitas/Receita3.png">
+            </article>
+        </div>
+        <div class="tudo">
+            <a class="todas & text-16px-Bold" href="#">
+                TODAS RECEITAS
+            </a>
+        </div>
+    </section>
+    <!-- Fim Código Tiago-->
+
+    <!-- Inicio Código Anabelly -->
+
+
+    <button id="hamburger" class="hamburger" tabindex="0">
+        <svg viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+    </button>
+
+    <!-- Fim Código MENU -->
+
+
+    <!-- Inicio Código Imagem -->
+    <div class="img__background">
+        <img src="./img/braseiro-gourmet.jpg" alt="" class="img__background">
+    </div>
+    <!-- Fim Código Imagem -->
+
+
+    <!-- Inicio Código Produtos -->
+    <div id="Produtos" class="main row wrapper">
+        <div class="">
+            <ul class="vertical-nav">
+                <li class="selected">LINGUIÇA GOURMET</li>
+                <li>LINGUIÇA TRADICIONAL</li>
+                <li>HAMBÙRGUER</li>
+                <li>ESPETINHO </li>
+            </ul>
+        </div>
+        <ul class="tabbable-content row">
+            <!-- Inicio Código Sessão #1 -->
+            <li class="show">
+                <h1>LINGUIÇA GOURMET</h1>
+                <div class="cards__section">
+                    <div class="card">
+                        <img src="img/card.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/card3.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/card.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/card3.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/card.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/card3.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/card.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <!-- Fim Código Sessão #1 -->
+
+            <!-- Inicio Código Sessão #2 -->
+            <li>
+                <h1>LINGUIÇA TRADICIONAL</h1>
+                <div class="cards__section">
+                    <div class="card">
+                        <img src="img/card2.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/card2.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/card2.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <!-- Fim Código Sessão #2 -->
+
+
+            <!-- Inicio Código Sessão #2 -->
+            <li>
+                <h1>HAMBÙRGUER</h1>
+                <div class="cards__section">
+                    <div class="card">
+                        <img src="img/Hamburguer1.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/Hamburguer2.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/Hamburguer3.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <!-- Fim Código Sessão #3 -->
+
+            <!-- Inicio Código Sessão #4 -->
+            <li>
+                <h1>ESPETINHO</h1>
+                <div class="cards__section">
+                    <div class="card">
+                        <img src="img/Espeto.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/Espeto.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/Espeto.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <!-- Fim Código Sessão #4 -->
+        </ul>
+    </div>
+
+    <!-- Fim Código Produtos -->
+
+    <script src="./js/script.js"></script>
+
+    <!-- Fim Código Anabelly -->
+
+    <!-- Inicio Código Tiago 2º parte -->
+
+    <section class="about" id="Somos">
+        <div class="about__title & h3">
+            <h1>Quem somos</h1>
+        </div>
+        <div class="flex__about">
+            <div class="about__img">
+                <img class="about__img-img" src="./img/QuemSomos.png" alt="">
+            </div>
+            <div class="abolt__text">
+                <p class="about-text & text-16px-normal">
+                    A empresa surgiu baseada em um desejo de empreender, associada a experiências anteriores que
+                    permitiram adquirir aprendizados e ideias construtivas para o negócio. Todos esses fatores
+                    associados a inquietação de criar algo novo para o mercado fez com que a Braseiro nascesse, a fim de
+                    revolucionar todos os paradigmas até hoje criados a cerca do ato de comer bem e com qualidade.
+                </p><br>
+
+                <p class="about-text & text-16px-normal">
+                    A empresa braseiro linguiças gourmet é uma empresa familiar de porte pequeno. A proprietária Brenda
+                    é tecnóloga em alimentos formada pela UEMS, veio de uma família catarinense atuando 8 anos na área
+                    frigorífica e seu esposo 30, sempre houve o interesse em atuar nessa área de produção, em 6 meses
+                    conseguiram todos os padrões sanitários, começando a produção de apenas 4 produtos, hoje em dia
+                    trabalham com 11 produtos no total. O público alvo é para o A/B mas estão trabalhando para conseguir
+                    atender todos os públicos. A braseiro é uma das 3 empresas de navirai que tem todos os certificados,
+                    e no estado são apenas 5.
+                </p><br>
+
+                <p class="about-text & text-16px-normal">
+                    Qualidade essa que sempre foi o foco de todas as ações tomadas desde a idealização, nascimento, e
+                    consolidação de nossa marca, prezando pela experiência sensorial, sabor e diferenciação ao incluir
+                    algum de nossos itens em seus momentos, seja entre a família, amigos ou somente buscando uma rápida
+                    refeição queremos trazer satisfação e segurança para sua experiência.
+                </p><br>
+
+                <p class="about-text & text-16px-normal">
+                    Nessa caminha adquirimos nossos selos de qualidade, confirmando todas as nossas certezas a cerca do
+                    que acreditamos, sempre trabalhando com empenho, conquistando a credibilidade de todos nossos
+                    clientes a fim de sermos conhecidos como referência no que fazemos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Inicio do corpo sisbi-->
+    <section class="fundo_sisbi">
+        <div class="logo_sobre">
+            <img src="img/LOGO BRASEIRO.png" class="logobraseiro-sisbi">
+            <div>
+                <p class="texto_sobre & text-20px-light">
+                    O sistema brasileiro de inspeção de produtos de origem animal (SISBI) determina que todos os
+                    produtos de origem animal passem por uma inspeção prévia industrial e sanitária.
+                    O SISBI padroniza os conceitos, princípios, e procedimentos de inspeções para que com isso possam
+                    alcançar os mesmos objetivos de fiscalização,
+                    inocuidade e qualidade dos produtos, permitindo assim que eles sejam comercializados em todo
+                    território nacional.
+                    Com o SISBI à diversas vantagens como o rompimento das diversas barreiras comerciais; melhoria na
+                    prestação do serviço a população; garantia de alimentos seguros;
+                    e principalmente a formalização do empreendimento.
+                </p>
+            </div>
+        </div>
+        <div class="selo_sisbi">
+            <img src="img/SISBI.png">
+        </div>
+    </section>
+    <!--Fim do corpo-->
+
+    <!-- Fim Código Tiago 2º parte -->
+
+    <section class="contato" id="Contatos">
+        <h1 class="contato__title & h2">Fale Conosco</h1>
+        <div class="contato__flex">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458.8409269567954!2d-54.216803825400824!3d-23.07045295976278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x948b8fa8401d8b9b%3A0xf96470b66b5ebdcc!2sAv.%20Caarap%C3%B3%2C%201733%20-%20Res.%20Ipe%2C%20Navira%C3%AD%20-%20MS%2C%2079950-000!5e0!3m2!1spt-BR!2sbr!4v1687392019844!5m2!1spt-BR!2sbr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <input name="name" type="text" class="feedback-input" placeholder="Nome"  />
+                <input name="email" type="text" class="feedback-input" placeholder="E-mail" />
+                <textarea name="text" class="feedback-input" placeholder="Mensagem"></textarea>
+                <input type="submit" value="Enviar" />
+            </form>
+        </div>
+    </section>
+
+    <!-- Inicio Código Diego -->
+    <footer class="footer__section">
+        <section class="footer__conteudo">
+            <div class="footer__empresa">
+                <p class="footer__Titulo">Braseiro</p>
+                <img class="footer__img-logo" src="./img/LOGO BRASEIRO.png" alt="">
+            </div>
+
+            <div class="footer__sobre">
+                <p class="footer__Titulo">Sobre</p>
+                <div class="footer__nav">
+                    <ul class="footer__nav-ul">
+                        <li class="footer__nav-li"><a href="#Home">Home</a></li>
+                        <li class="footer__nav-li"><a href="#Produto">Produtos</a></li>
+                        <li class="footer__nav-li"><a href="#Sobre">Sobre</a></li>
+                        <li class="footer__nav-li"><a href="#Contato">Contato</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__parceiros">
+                <p class="footer__Titulo center">Parcerias</p>
+                <div class="footer__parceiros-conteudo">
+                    <a href="#" class="footer__parca1">
+                        <img src="./img/LogoIfms.png" alt="">
+                    </a>
+                    <a href="#" class="footer__parca2">
+                        <img src="./img/LogoUfms.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer__contato">
+                <p class="footer__Titulo">Contato</p>
+                <div class="footer__infos">
+                    <p>+55 (67) 99826-6778</p>
+                    <p>braseiroatacadista@gmail.com</p>
+                </div>
+
+                <div class="footer__social-flex">
+
+                    <a href="https://www.instagram.com/braseiroatacadistaltda/" class="footer__social" target="_blank"><i
+                            class='bx bxl-instagram footer__social-icon'></i></a>
+                    <a href="https://www.facebook.com/braseiroatacadistaltda" class="footer__social" target="_blank"><i
+                            class='bx bxl-facebook footer__social-icon'></i></a>
+                    <a href="https://wa.me/556798266778" class="footer__social" target="_blank"><i
+                            class='bx bxl-whatsapp footer__social-icon'></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCpVQrnbFlmtvMDfRSbJKXqgcPpmrkPtfCVHWzHgwQcmHFxlwQvJlxtqnTMvkHZMMrnSvW" class="footer__social" target="_blank"><i
+                            class='bx bxl-gmail footer__social-icon'></i></a>
+
+
+                </div>
+            </div>
+        </section>
+
+        <div class="footer__risco"></div>
+
+        <div class="footer__copy">
+            <div class="footer__all">
+                <p>&copy; Copyright 2023 <strong>IFMS & UFMS - Campus Naviraí</strong> Todos os direitos reservados.</p>
+
+                <div class="footer__links">
+                    <a href="#" target="_blank">Contato</a>
+                    <a href="./page/creditos.html" target="_blank">Creditos</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Fim Código Diego -->
+</body>
+
+</html>

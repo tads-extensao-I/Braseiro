@@ -1,0 +1,817 @@
+@import url("/CSS/fonts.css");
+:root {
+    font-size: 10px;
+    --primary-50: #f4e5e8;
+    --primary-100: #e5bfc3;
+    --primary-200: #c58485;
+    --primary-300: #ab5859;
+    --primary-400: #ac3537;
+    --primary-500: #a71f1f;
+    --primary-600: #9a171e;
+    --primary-700: #8b0f19;
+    --primary-800: #7e0813;
+    --primary-900: #6e020a;
+    --primary-a-100: #ec8383;
+    --primary-a-200: #d14651;
+    --primary-a-400: #ae183a;
+    --primary-a-700: #6e020a;
+    --secundary-50: #f9e8e6;
+    --secundary-100: #fbcaba;
+    --secundary-200: #f9a88f;
+    --secundary-300: #f68762;
+    --secundary-400: #f56d40;
+    --secundary-500: #f3541e;
+    --secundary-600: #e94f1a;
+    --secundary-700: #db4816;
+    --secundary-800: #cd4112;
+    --secundary-900: #b4350a;
+    --secundary-a-100: #fba080;
+    --secundary-a-200: #f77442;
+    --secundary-a-400: #f34c0b;
+    --secundary-a-700: #cd4112;
+    --neutral-50: #f5f5f5;
+    --neutral-100: #e9e9e9;
+    --neutral-200: #d9d9d9;
+    --neutral-300: #c4c4c4;
+    --neutral-400: #9d9d9d;
+    --neutral-500: #7b7b7b;
+    --neutral-600: #555;
+    --neutral-700: #434343;
+    --neutral-800: #262626;
+    --neutral-900: #000;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio Código Nicholas */
+html{
+    scroll-behavior: smooth;
+}
+.section__img-background {
+    background-image: url("/img/Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 2%;
+}
+
+header {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-imagem {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 8%;
+    background-color: var(--neutral-900);
+    border-radius: 100%;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-cabecalho {
+    margin-top: 50px;
+    z-index: 3;
+}
+
+.next-btn {
+    z-index: 4;
+    position: relative;
+}
+
+.menu-cabecalho li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu-cabecalho li a {
+    border: 2px solid var(--secundary-500);
+    text-decoration: none;
+    color: var(--neutral-100);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 10px;
+    z-index: 9999;
+    
+}
+
+.menu-cabecalho li a:hover {
+    background-color: var(--neutral-400);
+}
+
+.fundo-imagem {
+    width: 100%;
+    height: 100%;
+    background-color: var(--neutral-900);
+}
+
+
+
+/*=====================================================================================================*/
+
+.slider {
+    position: relative;
+    margin-top: 10% !important;
+    margin: 0 auto;
+    width:50%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+ 
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .indicator span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator span.active {
+    background-color: #333;
+  }
+
+/* Fim Código Nicholas */
+
+.about__title {
+    display: flex;
+    justify-content: center;
+}
+
+.about__img {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+.flex__about {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.about-text {
+    width: 68%; 
+    text-align: justify;
+  
+}
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+.about__img-img {
+    height: 400px;
+}
+
+
+
+
+form { max-width:420px;}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+/* Inicio Código Tiago */
+
+/*----------Corpo do produto---------*/
+.produtos {
+    background-color: var(--neutral-900);
+    background-repeat: no-repeat;
+}
+
+.card-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 5%;
+}
+
+.link-produto {
+    padding: 3%;
+    justify-content: center;
+    display: flex;
+}
+.link-produto a:hover{
+    background-color: var(--neutral-400);
+ }
+.a {
+    border: 2px solid var(--secundary-500);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+}
+
+.link-maisproduto {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+
+}
+
+.alt {
+    border: 2px solid var(--secundary-500);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 12px;
+
+}
+
+/*----------- final do produto ------------*/
+/*----------- Inicio receitas ------------*/
+.receitas_todos {
+    background-color: var(--neutral-900);
+    background-image: url(/img/Receitas/Background-receitas.png);
+    background-repeat: no-repeat;
+}
+
+.link_receitas {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.tipo {
+    border: 2px solid var(--secundary-500);
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--neutral-100);
+    text-decoration: none;
+}
+
+.recentes {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--neutral-50);
+    color: #000;
+    text-decoration: none;
+}
+
+.receitas_card {
+    
+    
+    display: flex;
+    justify-content: center;
+    gap: 9%;
+}
+
+.link_receitas {
+    position: relative;
+    top: -19%;
+    align-items: center;
+}
+
+.receitas {
+    color:var(--neutral-100);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.todas {
+    border: 2px solid var(--secundary-500);
+    text-decoration: none;
+    color:var(--neutral-100);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.tudo {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+/*----------- final receitas ------------*/
+
+/* Fim Código Tiago */
+
+/* Inicio Código Anabelly */
+
+/*========================= Menu =========================*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--neutral-900);
+    /* cor de fundo do menu */
+    padding: 16px;
+    /* tamanho do menu */
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+.hamburger svg {
+    width: 16px;
+    /* tamanho do icone menu */
+    height: 16px;
+    /* tamanho do icone menu */
+    fill: var(--neutral-900);
+    /* cor do icone menu */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 10%;
+    /* distancia do menu da borda direita */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    /* tamanho da fonte menu */
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu.open {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.menu li {
+    padding: 0 12px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu li {
+        padding: 0px;
+        margin-bottom: 8px;
+    }
+}
+
+.menu li a {
+    color: var(--neutral-900);
+    /* cor do texto link*/
+    padding: 8px 16px;
+    background-color: var(--neutral-50);
+    /* cor do fundo link */
+    border-radius: 20px;
+    /* borda redonda fundo link */
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: var(--neutral-50);
+    /* cor passa o mouse link */
+    transition: all 0.2s;
+}
+
+.active {
+    background-color: var(--neutral-400) !important;
+    /* cor do link do menu selecionado */
+}
+
+/*========================= Fim Menu =========================*/
+
+
+/*========================= Imagem =========================*/
+.img__background {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*========================= Fim Imagem =========================*/
+
+
+
+/*========================= Produtos =========================*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.centered-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    /* distancia entre o menu e os cards */
+}
+
+.main {
+    margin-top: 18px;
+    /* distancia da home */
+    margin-bottom: 24px;
+    /* distancia do rodape */
+}
+
+.push {
+    height: 319px;
+}
+
+.vertical-nav {
+    border-left: 8px solid var(--secundary-400);
+    /* Borda laranja da lateral */
+}
+
+.vertical-nav li {
+    width: 250px;
+    /* largura do menu */
+    background-color: var(--primary-50);
+    /* cor do menu */
+    color: var(--neutral-900);
+    /* cor da fonte do menu */
+    padding: 18px;
+    /* espaço interno dos menus */
+    cursor: pointer;
+    border-bottom: 1px solid var(--neutral-50);
+    /* borda branca que separa os itens */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.vertical-nav li:last-of-type {
+    border-bottom: 0;
+}
+
+.vertical-nav li.selected {
+    background-color: var(--neutral-50);
+    /* cor do menu selecionado */
+}
+
+.tabbable-content {
+    background-color: var(--primary-50);
+    /* cor de fundo da sessão de cards*/
+    padding-left: 18px;
+    /* distancia da lateral esquerda */
+    padding-right: 18px;
+    /* distancia da lateral direita */
+}
+
+.tabbable-content li {
+    display: none;
+}
+
+.tabbable-content li h1,
+.tabbable-content li p {
+    padding: 9px;
+}
+
+.tabbable-content li.show {
+    display: block;
+}
+
+.cards__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* distancia entre os cards */
+}
+
+/*========================= Fim Produtos =========================*/
+
+/* Fim Código Anabelly */
+
+/* Inicio Código Tiago 2º Parte */
+.fundo_sisbi {
+    background-color: var(--neutral-700);
+}
+
+.texto_sobre {
+    width: 90%;
+    color: var(--neutral-50);
+    padding-left: 15px;
+    padding-right: 180px;
+    text-align: justify;
+}
+
+.logo_sobre {
+    display: flex;
+    justify-content: center;
+    padding: 15%;
+    gap: 40px;
+}
+
+.logobraseiro-sisbi {
+    width: 180px;
+    height: 180px;
+}
+
+.selo_sisbi {
+    display: flex;
+    justify-content: center;
+}
+.feedback-input{
+    color: var(--neutral-900);
+}
+.contato__title{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contato {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.contato__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Inicio Código Diego */
+
+.footer__section {
+    background-color: var(--neutral-800);
+    margin-top: 4%;
+}
+
+a {
+    text-decoration: none;
+}
+.footer__conteudo {
+    padding-top: 1%;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer__Titulo {
+    font-family: '';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.footer__empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.center {
+    padding-left: 10%;
+}
+.footer__img-logo {
+    width: 100px;
+}
+
+.footer__sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__nav-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__nav-li a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.footer__parceiros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__parceiros-conteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.footer__contato {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.footer__infos {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer__social-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer__social {
+    background-color: #E0871A;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social-icon {
+    color: #fff;
+    font-size: 26px;
+}
+
+.footer__risco {
+    border: 1px solid white;
+    width: 90%;
+    margin: 10px auto;
+
+}
+
+.footer__copy {
+    width: 90%;
+    margin: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer__all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+}
+
+.footer__links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__links a {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* Fim Código Diego */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
